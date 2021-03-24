@@ -1,0 +1,15 @@
+.trusted {
+  height: 25vh;
+  &__title {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+    color: $color-heading;
+    margin-bottom: 6rem;
+  }
+
+  &__img {
+    display: flex;
+    justify-content: space-between;
+  }
+}

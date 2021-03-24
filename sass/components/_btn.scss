@@ -1,0 +1,19 @@
+.btn {
+  padding: 20px 45px;
+  border-radius: 50px;
+  display: inline-block;
+}
+
+.btn--blue {
+  color: white;
+  background-color: $color-primary;
+  border: 1px solid $color-primary;
+  font-weight: bold;
+  transition: all 0.3s ease-in-out;
+
+  &:hover {
+    background-color: white;
+    border: 1px solid $color-primary;
+    color: $color-primary;
+  }
+}

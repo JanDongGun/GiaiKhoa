@@ -1,0 +1,18 @@
+@import "resetCss/reset";
+
+@import "abstracts/mixins";
+@import "abstracts/variables";
+
+@import "base/animations";
+@import "base/base";
+@import "base/typography";
+@import "base/utilities";
+
+@import "layout/menu";
+@import "layout/header";
+@import "layout/trusted";
+@import "layout/footer";
+
+@import "components/btn";
+@import "components/loader";
+@import "pages/home";
