@@ -14,7 +14,7 @@
     height: 60vh;
     justify-content: space-between;
     align-items: center;
-    padding-top: 10vh;
+    padding-top: 25vh;
 
     @include respond(tab-port) {
       flex-direction: column;

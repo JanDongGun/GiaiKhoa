@@ -10,17 +10,21 @@
 }
 
 .heading-secondary {
-  font-size: 3rem;
+  font-size: 3.5rem;
   font-weight: 700;
   color: $color-heading;
   text-transform: uppercase;
 }
 
 .blue {
-  font-size: 5rem;
+  font-size: 6rem;
   display: block;
   margin-bottom: 2.5rem;
   color: $color-primary;
+
+  @include respond(tab-land) {
+    font-size: 5rem;
+  }
 
   @include respond(phone) {
     margin-bottom: 2rem;

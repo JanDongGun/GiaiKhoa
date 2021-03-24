@@ -191,6 +191,7 @@ body {
   font-family: "Open Sans", sans-serif;
   box-sizing: border-box;
   overflow-x: hidden;
+  background-color: #f7fcfd;
 }
 
 a {
@@ -221,17 +222,22 @@ a {
 }
 
 .heading-secondary {
-  font-size: 3rem;
+  font-size: 3.5rem;
   font-weight: 700;
   color: #32373e;
   text-transform: uppercase;
 }
 
 .blue {
-  font-size: 5rem;
+  font-size: 6rem;
   display: block;
   margin-bottom: 2.5rem;
   color: #00bfd8;
+}
+@media (max-width: 75em) {
+  .blue {
+    font-size: 5rem;
+  }
 }
 @media (max-width: 37.5em) {
   .blue {
@@ -242,6 +248,10 @@ a {
 
 .u-mb-s {
   margin-bottom: 2.5rem;
+}
+
+.u-tc {
+  text-align: center;
 }
 
 .menu {
@@ -368,7 +378,7 @@ a {
   height: 60vh;
   justify-content: space-between;
   align-items: center;
-  padding-top: 10vh;
+  padding-top: 25vh;
 }
 @media (max-width: 56.25em) {
   .header__banner {
@@ -505,6 +515,53 @@ a {
 .target__img img {
   width: 100%;
   margin-bottom: 5rem;
+}
+
+.details {
+  margin-bottom: 17.5rem;
+}
+.details__sub {
+  width: 60%;
+  line-height: 1.5;
+  text-align: center;
+  font-size: 1.7rem;
+  margin: 0 auto 7rem auto;
+  color: #5d636b;
+}
+.details__cards {
+  display: flex;
+  text-align: center;
+  justify-content: space-between;
+}
+.details__card {
+  flex: 30%;
+  border: 1px solid #c4d8dc;
+  padding: 5rem 3rem;
+  border-radius: 10px;
+  box-shadow: 0 20px 20px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-in-out;
+}
+.details__card:not(:last-child) {
+  margin-right: 5%;
+}
+.details__card:hover {
+  transform: translateY(-10px) scale(1.1);
+  box-shadow: 0 20px 20px rgba(0, 0, 0, 0.15);
+}
+.details__card-title {
+  color: #32373e;
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 4rem 0 1rem 0;
+}
+.details__card-sub {
+  color: #5d636b;
+  font-size: 1.7rem;
+  line-height: 1.5;
+}
+.details__card-img {
+  width: 60%;
+  transition: all 0.3s ease;
 }
 
 .btn {
