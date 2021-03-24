@@ -340,7 +340,7 @@ a {
 
 .header {
   width: 100%;
-  background-image: url(./../../images/header-background.jpg);
+  background-image: url(../../../images/header-background.jpg);
   background-size: cover;
   background-position: left;
   height: 75vh;
