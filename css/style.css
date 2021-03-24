@@ -533,6 +533,15 @@ a {
   text-align: center;
   justify-content: space-between;
 }
+@media (max-width: 56.25em) {
+  .details__cards {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+    margin: 0 auto;
+  }
+}
 .details__card {
   flex: 30%;
   border: 1px solid #c4d8dc;
@@ -541,8 +550,19 @@ a {
   box-shadow: 0 20px 20px rgba(0, 0, 0, 0.1);
   transition: all 0.3s ease-in-out;
 }
+@media (max-width: 56.25em) {
+  .details__card {
+    width: 100%;
+  }
+}
 .details__card:not(:last-child) {
   margin-right: 5%;
+}
+@media (max-width: 56.25em) {
+  .details__card:not(:last-child) {
+    margin-right: 0;
+    margin-bottom: 5rem;
+  }
 }
 .details__card:hover {
   transform: translateY(-10px) scale(1.1);

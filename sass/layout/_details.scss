@@ -13,6 +13,13 @@
     display: flex;
     text-align: center;
     justify-content: space-between;
+    @include respond(tab-port) {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 60%;
+      margin: 0 auto;
+    }
   }
 
   &__card {
@@ -22,8 +29,16 @@
     border-radius: 10px;
     box-shadow: 0 20px 20px rgba($color: #000000, $alpha: 0.1);
     transition: all 0.3s ease-in-out;
+
+    @include respond(tab-port) {
+      width: 100%;
+    }
     &:not(:last-child) {
       margin-right: 5%;
+      @include respond(tab-port) {
+        margin-right: 0;
+        margin-bottom: 5rem;
+      }
     }
     &:hover {
       transform: translateY(-10px) scale(1.1);
