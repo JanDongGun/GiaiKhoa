@@ -250,6 +250,10 @@ a {
   margin-bottom: 2.5rem;
 }
 
+.u-mb-m {
+  margin-bottom: 7rem;
+}
+
 .u-tc {
   text-align: center;
 }
@@ -423,6 +427,7 @@ a {
 }
 
 .trusted {
+  background-color: white;
   height: 25vh;
 }
 @media (max-width: 56.25em) {
@@ -475,7 +480,7 @@ a {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 12.5rem;
+  padding-top: 12.5rem;
 }
 @media (max-width: 56.25em) {
   .target {
@@ -518,6 +523,7 @@ a {
 }
 
 .details {
+  margin-top: 12.5rem;
   margin-bottom: 17.5rem;
 }
 .details__sub {
@@ -582,6 +588,34 @@ a {
 .details__card-img {
   width: 60%;
   transition: all 0.3s ease;
+}
+
+.roles {
+  margin-bottom: 12.5rem;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.role {
+  flex: 0 0 30%;
+  text-align: center;
+  margin-bottom: 5rem;
+}
+.role:not(:nth-child(3n+3)) {
+  margin-right: 5%;
+}
+.role img {
+  width: 250px;
+  height: 250px;
+  border: 1px solid #c4d8dc;
+  border-radius: 50%;
+}
+.role__title {
+  font-size: 1.7rem;
+  color: #5d636b;
+  line-height: 1.5;
+  width: 90%;
+  margin: 2.5rem auto 0 auto;
 }
 
 .btn {
