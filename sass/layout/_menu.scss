@@ -1,9 +1,19 @@
 .menu {
+  position: fixed;
+  z-index: 10;
+  top: 0;
+  left: 0;
+  width: 100%;
   display: flex;
-  padding: 2rem 4rem;
+  padding: 0 5rem;
+  height: 10rem;
   justify-content: space-between;
   align-items: center;
+  transition: all 0.3s ease-in-out;
 
+  &__nav {
+    flex: 0 0 27%;
+  }
   &__list {
     display: flex;
   }
@@ -20,6 +30,7 @@
     color: white;
     position: relative;
     padding-bottom: 8px;
+    transition: all 0.3s ease-in;
 
     &::after {
       position: absolute;
@@ -35,6 +46,23 @@
 
     &:hover::after {
       width: 100%;
+    }
+  }
+
+  &--scroll {
+    background-color: white;
+    height: 8rem;
+    box-shadow: 0 1rem 1rem rgba($color: #000000, $alpha: 0.2);
+
+    .menu__link {
+      color: $color-heading;
+
+      &:hover {
+        color: $color-primary;
+      }
+      &::after {
+        background-color: $color-primary;
+      }
     }
   }
 }
