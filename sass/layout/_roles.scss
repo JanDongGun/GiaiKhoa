@@ -2,14 +2,38 @@
   margin-bottom: 12.5rem;
   display: flex;
   flex-wrap: wrap;
+
+  @include respond(tab-port) {
+    justify-content: center;
+  }
 }
 
 .role {
   flex: 0 0 30%;
   text-align: center;
   margin-bottom: 5rem;
+  @include respond(tab-land) {
+    flex: 0 0 45%;
+  }
+  @include respond(tab-port) {
+    flex: 0 0 55%;
+  }
+
   &:not(:nth-child(3n + 3)) {
     margin-right: 5%;
+    @include respond(tab-land) {
+      margin-right: 0;
+    }
+  }
+
+  &:not(:nth-child(2n + 2)) {
+    @include respond(tab-land) {
+      margin-right: 10%;
+    }
+
+    @include respond(tab-port) {
+      margin-right: 0;
+    }
   }
 
   img {
