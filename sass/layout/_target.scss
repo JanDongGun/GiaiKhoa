@@ -3,6 +3,13 @@
   justify-content: space-between;
   align-items: center;
   margin-bottom: 12.5rem;
+  @include respond(tab-port) {
+    flex-direction: column;
+    justify-content: center;
+  }
+  @include respond(phone) {
+    margin-bottom: 5rem;
+  }
 
   &__content {
     flex: 0 0 45%;
@@ -22,8 +29,14 @@
   }
   &__img {
     flex: 0 0 50%;
+    @include respond(tab-port) {
+      width: 100%;
+      text-align: center;
+    }
+
     img {
       width: 100%;
+      margin-bottom: 5rem;
     }
   }
 }

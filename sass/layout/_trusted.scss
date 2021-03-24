@@ -1,10 +1,12 @@
 .trusted {
   @include respond(tab-port) {
-    margin-top: 25vh;
+    margin-top: 30vh;
+    margin-bottom: 5rem;
   }
 
   @include respond(phone) {
     margin-top: 5vh;
+    height: 15vh;
   }
   height: 25vh;
   &__title {
