@@ -1,4 +1,11 @@
 .trusted {
+  @include respond(tab-port) {
+    margin-top: 25vh;
+  }
+
+  @include respond(phone) {
+    margin-top: 5vh;
+  }
   height: 25vh;
   &__title {
     text-align: center;
@@ -6,10 +13,29 @@
     font-weight: bold;
     color: $color-heading;
     margin-bottom: 6rem;
+
+    @include respond(tab-port) {
+      margin-bottom: 4rem;
+    }
+
+    @include respond(phone) {
+      margin-bottom: 2rem;
+    }
   }
 
   &__img {
     display: flex;
     justify-content: space-between;
+    @include respond(tab-port) {
+      flex-wrap: wrap;
+      margin: 0 auto;
+    }
+
+    img {
+      @include respond(tab-port) {
+        margin-bottom: 10px;
+        width: 30%;
+      }
+    }
   }
 }

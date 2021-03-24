@@ -3,11 +3,19 @@
   font-weight: bold;
   color: $color-heading;
   text-transform: uppercase;
+
+  @include respond(phone) {
+    font-size: 1.6rem;
+  }
 }
 
 .blue {
-  font-size: 5rem;
+  font-size: 3rem;
   display: block;
   margin-bottom: 2.5rem;
   color: $color-primary;
+
+  @include respond(phone) {
+    margin-bottom: 2rem;
+  }
 }

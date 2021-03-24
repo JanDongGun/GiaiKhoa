@@ -1,8 +1,12 @@
 .header {
+  width: 100%;
   background-image: url(./../../images/header-background.jpg);
   background-size: cover;
-  background-position: 20%;
+  background-position: left;
   height: 75vh;
+  @include respond(tab-port) {
+    background-image: none;
+  }
 
   &__banner {
     display: flex;
@@ -11,6 +15,18 @@
     justify-content: space-between;
     align-items: center;
     padding-top: 10vh;
+
+    @include respond(tab-port) {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding-top: 50vh;
+    }
+
+    @include respond(phone) {
+      padding-top: 30vh;
+    }
   }
 
   &__title {
@@ -22,6 +38,12 @@
     img {
       width: 100%;
     }
+
+    @include respond(tab-port) {
+      display: block;
+      margin-top: 5rem;
+      width: 70%;
+    }
   }
 
   &__sub {
@@ -29,5 +51,9 @@
     margin: 4rem 0;
     color: $color-gray-dark;
     font-size: 1.8rem;
+
+    @include respond(phone) {
+      margin: 2rem 0;
+    }
   }
 }

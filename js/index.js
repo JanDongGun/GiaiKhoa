@@ -4,10 +4,29 @@ window.addEventListener("load", function () {
 });
 
 window.addEventListener("DOMContentLoaded", function () {
-  var status = "lower200";
-  var menu = document.querySelector(".menu");
+  let status = "lower200";
+  const menu = document.querySelector(".menu");
+  const hamburger = document.querySelector(".menu__hamburger");
+  const overlay = document.querySelector(".overlay");
+  const navMobile = document.querySelector(".nav-mobile");
 
-  var scrollTop = document.querySelector(".scrollTop");
+  hamburger.addEventListener("click", (e) => {
+    if (hamburger.classList.contains("open")) {
+      hamburger.classList.remove("open");
+      overlay.classList.remove("fade-in");
+      overlay.classList.add("fade-out");
+      menu.classList.remove("menu--white");
+      navMobile.classList.remove("turn-in-top");
+      navMobile.classList.add("turn-out-top");
+    } else {
+      hamburger.classList.add("open");
+      overlay.classList.remove("fade-out");
+      overlay.classList.add("fade-in");
+      menu.classList.add("menu--white");
+      navMobile.classList.remove("turn-out-top");
+      navMobile.classList.add("turn-in-top");
+    }
+  });
 
   window.addEventListener("scroll", function () {
     var offset = window.pageYOffset;
