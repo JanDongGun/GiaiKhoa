@@ -1,0 +1,29 @@
+.target {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12.5rem;
+
+  &__content {
+    flex: 0 0 45%;
+  }
+  &__item {
+    line-height: 1.5;
+    font-size: 1.7rem;
+    color: $color-gray-dark;
+    margin-bottom: 10px;
+
+    i {
+      font-size: 1.3rem;
+      color: $color-primary;
+      display: inline-block;
+      margin-right: 10px;
+    }
+  }
+  &__img {
+    flex: 0 0 50%;
+    img {
+      width: 100%;
+    }
+  }
+}

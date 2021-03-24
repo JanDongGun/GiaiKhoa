@@ -9,13 +9,21 @@
   }
 }
 
-.blue {
+.heading-secondary {
   font-size: 3rem;
+  font-weight: 700;
+  color: $color-heading;
+  text-transform: uppercase;
+}
+
+.blue {
+  font-size: 5rem;
   display: block;
   margin-bottom: 2.5rem;
   color: $color-primary;
 
   @include respond(phone) {
     margin-bottom: 2rem;
+    font-size: 3rem;
   }
 }
