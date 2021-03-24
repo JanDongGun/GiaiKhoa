@@ -222,7 +222,7 @@ a {
 }
 
 .header {
-  background-image: url(../../images/header-background.jpg);
+  background-image: url(./../../images/header-background.jpg);
   background-size: cover;
   background-position: 20%;
   height: 75vh;
