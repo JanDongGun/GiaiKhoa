@@ -84,10 +84,13 @@
       width: 26px;
       height: 2px;
       background-color: $color-heading;
-      margin-bottom: 5px;
       border-radius: 20px;
       transform-origin: 3px 1px;
       transition: all 0.3s ease-in-out;
+
+      &:not(:last-child) {
+        margin-bottom: 5px;
+      }
     }
 
     &.open {
