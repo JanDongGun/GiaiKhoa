@@ -1,0 +1,26 @@
+.regis {
+  .text-container:not(:last-child) {
+    margin-bottom: 5rem;
+  }
+
+  &__item {
+    margin-bottom: 2rem;
+    font-size: 1.7rem;
+    color: $color-gray-dark;
+
+    i {
+      font-size: 1.3rem;
+      color: $color-primary;
+      margin-right: 1rem;
+    }
+  }
+}
+
+.row {
+  display: flex;
+  align-items: center;
+}
+
+#registration {
+  margin-bottom: 17.5rem;
+}
