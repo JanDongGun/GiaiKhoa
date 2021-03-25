@@ -11,6 +11,7 @@ window.addEventListener("DOMContentLoaded", function () {
   const navMobile = document.querySelector(".nav-mobile");
   const menuLink = document.querySelectorAll(".menu__link");
   const navMobileLink = document.querySelectorAll(".nav-mobile__link");
+  const scrollTop = document.querySelector(".scrolltop");
 
   menuLink.forEach((m) => {
     m.addEventListener("click", (e) => {
@@ -48,13 +49,13 @@ window.addEventListener("DOMContentLoaded", function () {
     if (offset > 200) {
       if (status === "lower200") {
         menu.classList.add("menu--scroll");
-        // scrollTop.classList.add("scrollTop--animate");
+        scrollTop.classList.add("scrolltop--animate");
         status = "higher200";
       }
     } else {
       if (status === "higher200") {
         menu.classList.remove("menu--scroll");
-        // scrollTop.classList.remove("scrollTop--animate");
+        scrollTop.classList.remove("scrolltop--animate");
         status = "lower200";
       }
     }
@@ -123,14 +124,7 @@ window.addEventListener("DOMContentLoaded", function () {
     requestAnimationFrame(animationScroll);
   }
 
-  //   scrollTop.addEventListener("click", function () {
-  //     smoothScroll(".menu", 1000); // menu top
-  //   });
-
-  //   if (btn !== null) {
-  //     // khi sang trang khác thì ko có nút learn more nữa nên bị lỗi btn là null
-  //     btn.addEventListener("click", function () {
-  //       smoothScroll(".section-dns", 1000);
-  //     });
-  //   }
+  scrollTop.addEventListener("click", function () {
+    smoothScroll(".menu", 1000); // menu top
+  });
 });

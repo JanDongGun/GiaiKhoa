@@ -210,6 +210,33 @@ a {
   z-index: 10;
 }
 
+.scrolltop {
+  width: 50px;
+  height: 50px;
+  position: fixed;
+  bottom: 50px;
+  right: 20px;
+  background-color: #00bfd8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  border-radius: 5px;
+  transform: translateX(200%);
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+.scrolltop i {
+  transition: all 0.3s ease;
+}
+.scrolltop:hover i {
+  transform: translateY(-5px);
+}
+
+.scrolltop--animate {
+  transform: translateX(0%);
+}
+
 .heading-primary {
   font-size: 2.5rem;
   font-weight: bold;
