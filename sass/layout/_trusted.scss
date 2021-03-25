@@ -1,9 +1,6 @@
 .trusted {
-  padding-top: 10rem;
   padding-bottom: 12.5rem;
   background-color: white;
-  @include respond(tab-port) {
-  }
 
   @include respond(phone) {
   }
