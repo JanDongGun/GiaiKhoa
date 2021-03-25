@@ -228,6 +228,13 @@ a {
   text-transform: uppercase;
 }
 
+.heading-tertiary {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #32373e;
+  text-transform: uppercase;
+}
+
 .blue {
   font-size: 6rem;
   display: block;
@@ -646,6 +653,38 @@ a {
   line-height: 1.5;
   width: 90%;
   margin: 2.5rem auto 0 auto;
+}
+
+.awards-section {
+  margin-bottom: 17.5rem;
+}
+
+.awards-container {
+  margin-bottom: 5rem;
+  border: 1px solid #c4d8dc;
+  padding: 7rem 3rem 10rem 3rem;
+  border-radius: 20px;
+}
+
+.awards {
+  display: flex;
+  justify-content: space-between;
+}
+
+.award {
+  flex: 0 0 22%;
+  text-align: center;
+}
+.award__img {
+  width: 80%;
+  margin-bottom: 3rem;
+}
+.award__sub {
+  color: #5d636b;
+  font-size: 1.8rem;
+  width: 70%;
+  line-height: 1.2;
+  margin: 0 auto;
 }
 
 .btn {
