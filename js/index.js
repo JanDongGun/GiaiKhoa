@@ -9,6 +9,21 @@ window.addEventListener("DOMContentLoaded", function () {
   const hamburger = document.querySelector(".menu__hamburger");
   const overlay = document.querySelector(".overlay");
   const navMobile = document.querySelector(".nav-mobile");
+  const menuLink = document.querySelectorAll(".menu__link");
+  const navMobileLink = document.querySelectorAll(".nav-mobile__link");
+
+  menuLink.forEach((m) => {
+    m.addEventListener("click", (e) => {
+      const id = m.getAttribute("data-id");
+      smoothScroll(`#${id}`, 1000);
+    });
+  });
+  navMobileLink.forEach((a) => {
+    a.addEventListener("click", (e) => {
+      const id = a.getAttribute("data-id");
+      smoothScroll(`#${id}`, 1000);
+    });
+  });
 
   hamburger.addEventListener("click", (e) => {
     if (hamburger.classList.contains("open")) {
@@ -82,41 +97,31 @@ window.addEventListener("DOMContentLoaded", function () {
     }
   }, 1000);
 
-  //   menuBar.addEventListener("click", function () {
-  //     nav.classList.add("nav--animate");
-  //     closeBtn.classList.add("nav__close--zoomClose");
-  //   });
+  function smoothScroll(target, duration) {
+    var target = document.querySelector(target);
+    var targetPosition = target.offsetTop - 200;
+    var startPosition = window.pageYOffset;
+    var distance = targetPosition - startPosition;
+    var startTime = null;
 
-  //   closeBtn.addEventListener("click", function () {
-  //     nav.classList.remove("nav--animate");
-  //     closeBtn.classList.remove("nav__close--zoomClose");
-  //   });
+    function animationScroll(currentTime) {
+      if (startTime === null) startTime = currentTime; // sau 7s khi refesh  mới nhấn nút để chuyển động thì current time lúc đầu bằng 7 và thay đổi đến khi hết hiệu ứng
+      var timeElapsed = currentTime - startTime; // thời gian trôi qua
+      var run = easeInOutCubic(timeElapsed, startPosition, distance, duration);
+      window.scrollTo(0, run);
+      if (timeElapsed < duration) requestAnimationFrame(animationScroll);
+    }
 
-  //   function smoothScroll(target, duration) {
-  //     var target = document.querySelector(target);
-  //     var targetPosition = target.offsetTop - 200;
-  //     var startPosition = window.pageYOffset;
-  //     var distance = targetPosition - startPosition;
-  //     var startTime = null;
+    function easeInOutCubic(t, b, c, d) {
+      // function ease http://gizma.com/easing/#cub3
+      t /= d / 2;
+      if (t < 1) return (c / 2) * t * t * t + b;
+      t -= 2;
+      return (c / 2) * (t * t * t + 2) + b;
+    }
 
-  //     function animationScroll(currentTime) {
-  //       if (startTime === null) startTime = currentTime; // sau 7s khi refesh  mới nhấn nút để chuyển động thì current time lúc đầu bằng 7 và thay đổi đến khi hết hiệu ứng
-  //       var timeElapsed = currentTime - startTime; // thời gian trôi qua
-  //       var run = easeInOutCubic(timeElapsed, startPosition, distance, duration);
-  //       window.scrollTo(0, run);
-  //       if (timeElapsed < duration) requestAnimationFrame(animationScroll);
-  //     }
-
-  //     function easeInOutCubic(t, b, c, d) {
-  //       // function ease http://gizma.com/easing/#cub3
-  //       t /= d / 2;
-  //       if (t < 1) return (c / 2) * t * t * t + b;
-  //       t -= 2;
-  //       return (c / 2) * (t * t * t + 2) + b;
-  //     }
-
-  //     requestAnimationFrame(animationScroll);
-  //   }
+    requestAnimationFrame(animationScroll);
+  }
 
   //   scrollTop.addEventListener("click", function () {
   //     smoothScroll(".menu", 1000); // menu top
