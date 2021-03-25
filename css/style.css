@@ -474,7 +474,7 @@ a {
 }
 
 .trusted {
-  background-color: white;
+  padding-top: 10vh;
   height: 25vh;
 }
 @media (max-width: 56.25em) {
@@ -712,6 +712,12 @@ a {
 
 .awards-section {
   margin-bottom: 17.5rem;
+}
+.awards-section__p {
+  text-align: center;
+  margin: 2rem 0 5rem 0;
+  font-size: 1.8rem;
+  color: #5d636b;
 }
 @media (max-width: 37.5em) {
   .awards-section {

@@ -1,5 +1,5 @@
 .trusted {
-  background-color: white;
+  padding-top: 10vh;
   @include respond(tab-port) {
     margin-top: 30vh;
     margin-bottom: 5rem;

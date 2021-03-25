@@ -1,5 +1,11 @@
 .awards-section {
   margin-bottom: 17.5rem;
+  &__p {
+    text-align: center;
+    margin: 2rem 0 5rem 0;
+    font-size: 1.8rem;
+    color: $color-gray-dark;
+  }
   @include respond(phone) {
     margin-bottom: 10rem;
   }
