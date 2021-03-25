@@ -11,14 +11,26 @@
 .awards {
   display: flex;
   justify-content: space-between;
+  @include respond(phone) {
+    flex-wrap: wrap;
+  }
 }
 .award {
   flex: 0 0 22%;
   text-align: center;
 
+  @include respond(phone) {
+    flex: 40%;
+    margin-bottom: 3rem;
+  }
+
   &__img {
     width: 80%;
     margin-bottom: 3rem;
+
+    @include respond(phone) {
+      margin-bottom: 1.5rem;
+    }
   }
 
   &__sub {
@@ -27,5 +39,8 @@
     width: 70%;
     line-height: 1.2;
     margin: 0 auto;
+    @include respond(tab-port) {
+      width: 100%;
+    }
   }
 }
