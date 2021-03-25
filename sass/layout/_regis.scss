@@ -1,5 +1,5 @@
 .regis {
-  @include respond(tab-port) {
+  @include respond(tab-land) {
     text-align: center;
   }
   .text-container:not(:last-child) {

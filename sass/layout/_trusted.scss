@@ -1,15 +1,12 @@
 .trusted {
-  padding-top: 10vh;
+  padding-top: 10rem;
+  padding-bottom: 12.5rem;
+  background-color: white;
   @include respond(tab-port) {
-    margin-top: 30vh;
-    margin-bottom: 5rem;
   }
 
   @include respond(phone) {
-    margin-top: 5vh;
-    height: 1vh;
   }
-  height: 25vh;
   &__title {
     text-align: center;
     font-size: 2rem;

@@ -3,6 +3,9 @@
   display: flex;
   flex-wrap: wrap;
 
+  @include respond(tab-land) {
+    justify-content: space-around;
+  }
   @include respond(tab-port) {
     justify-content: center;
   }
@@ -32,7 +35,7 @@
 
   &:not(:nth-child(2n + 2)) {
     @include respond(tab-land) {
-      margin-right: 10%;
+      margin-right: 0;
     }
 
     @include respond(tab-port) {

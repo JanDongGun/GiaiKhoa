@@ -11,6 +11,13 @@
   justify-content: space-between;
   transition: all 0.3s ease-in-out;
 
+  &__logo {
+    img {
+      @include respond(phone) {
+        width: 70%;
+      }
+    }
+  }
   &__nav {
     @include respond(tab-land) {
       display: none;
