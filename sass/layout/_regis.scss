@@ -1,4 +1,7 @@
 .regis {
+  @include respond(tab-port) {
+    text-align: center;
+  }
   .text-container:not(:last-child) {
     margin-bottom: 5rem;
   }
@@ -23,4 +26,7 @@
 
 #registration {
   margin-bottom: 17.5rem;
+  @include respond(phone) {
+    font-size: 10rem;
+  }
 }

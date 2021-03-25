@@ -226,6 +226,13 @@ a {
   font-weight: 700;
   color: #32373e;
   text-transform: uppercase;
+  line-height: 1.2;
+}
+@media (max-width: 37.5em) {
+  .heading-secondary {
+    font-size: 2.5rem;
+    text-align: center;
+  }
 }
 
 .heading-tertiary {
@@ -233,6 +240,11 @@ a {
   font-weight: 700;
   color: #32373e;
   text-transform: uppercase;
+}
+@media (max-width: 37.5em) {
+  .heading-tertiary {
+    font-size: 2rem;
+  }
 }
 
 .blue {
@@ -446,7 +458,7 @@ a {
 @media (max-width: 37.5em) {
   .trusted {
     margin-top: 5vh;
-    height: 15vh;
+    height: 1vh;
   }
 }
 .trusted__title {
@@ -497,7 +509,7 @@ a {
 }
 @media (max-width: 37.5em) {
   .target {
-    margin-bottom: 5rem;
+    padding-top: 10rem;
   }
 }
 .target__content {
@@ -533,6 +545,11 @@ a {
   margin-top: 12.5rem;
   margin-bottom: 17.5rem;
 }
+@media (max-width: 37.5em) {
+  .details {
+    margin-bottom: 10rem;
+  }
+}
 .details__sub {
   width: 60%;
   line-height: 1.5;
@@ -540,6 +557,11 @@ a {
   font-size: 1.7rem;
   margin: 0 auto 7rem auto;
   color: #5d636b;
+}
+@media (max-width: 37.5em) {
+  .details__sub {
+    width: 90%;
+  }
 }
 .details__cards {
   display: flex;
@@ -607,6 +629,11 @@ a {
     justify-content: center;
   }
 }
+@media (max-width: 37.5em) {
+  .roles {
+    margin-bottom: 5rem;
+  }
+}
 
 .role {
   flex: 0 0 30%;
@@ -658,6 +685,11 @@ a {
 .awards-section {
   margin-bottom: 17.5rem;
 }
+@media (max-width: 37.5em) {
+  .awards-section {
+    margin-bottom: 10rem;
+  }
+}
 
 .awards-container {
   margin-bottom: 5rem;
@@ -708,6 +740,11 @@ a {
   }
 }
 
+@media (max-width: 56.25em) {
+  .regis {
+    text-align: center;
+  }
+}
 .regis .text-container:not(:last-child) {
   margin-bottom: 5rem;
 }
@@ -729,6 +766,11 @@ a {
 
 #registration {
   margin-bottom: 17.5rem;
+}
+@media (max-width: 37.5em) {
+  #registration {
+    font-size: 10rem;
+  }
 }
 
 .btn {
@@ -810,6 +852,11 @@ a {
   align-items: center;
   justify-content: center;
 }
+@media (max-width: 37.5em) {
+  .countdown {
+    margin-top: 3rem;
+  }
+}
 .countdown__span {
   width: 120px;
   height: 120px;
@@ -822,6 +869,18 @@ a {
   font-size: 1.7rem;
   text-transform: uppercase;
 }
+@media (max-width: 37.5em) {
+  .countdown__span {
+    font-size: 1.5rem;
+  }
+}
+@media (max-width: 37.5em) {
+  .countdown__span {
+    width: 70px;
+    height: 70px;
+    border: 1px solid #00bfd8;
+  }
+}
 .countdown__span span {
   font-size: 3rem;
   color: #32373e;
@@ -830,13 +889,29 @@ a {
   font-weight: bold;
   font-family: "Abril Fatface", cursive;
 }
+@media (max-width: 37.5em) {
+  .countdown__span span {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+}
 .countdown__span:not(:last-child) {
   margin-right: 2rem;
+}
+@media (max-width: 37.5em) {
+  .countdown__span:not(:last-child) {
+    margin-right: 1rem;
+  }
 }
 
 #countdown {
   display: flex;
   margin-bottom: 5rem;
+}
+@media (max-width: 37.5em) {
+  #countdown {
+    margin-bottom: 3rem;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

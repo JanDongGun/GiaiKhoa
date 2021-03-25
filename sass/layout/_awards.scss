@@ -1,5 +1,8 @@
 .awards-section {
   margin-bottom: 17.5rem;
+  @include respond(phone) {
+    margin-bottom: 10rem;
+  }
 }
 .awards-container {
   margin-bottom: 5rem;

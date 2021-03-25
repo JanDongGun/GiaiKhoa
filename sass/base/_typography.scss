@@ -14,6 +14,11 @@
   font-weight: 700;
   color: $color-heading;
   text-transform: uppercase;
+  line-height: 1.2;
+  @include respond(phone) {
+    font-size: 2.5rem;
+    text-align: center;
+  }
 }
 
 .heading-tertiary {
@@ -21,6 +26,9 @@
   font-weight: 700;
   color: $color-heading;
   text-transform: uppercase;
+  @include respond(phone) {
+    font-size: 2rem;
+  }
 }
 
 .blue {

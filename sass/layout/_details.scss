@@ -1,6 +1,9 @@
 .details {
   margin-top: 12.5rem;
   margin-bottom: 17.5rem;
+  @include respond(phone) {
+    margin-bottom: 10rem;
+  }
   &__sub {
     width: 60%;
     line-height: 1.5;
@@ -8,6 +11,9 @@
     font-size: 1.7rem;
     margin: 0 auto 7rem auto;
     color: $color-gray-dark;
+    @include respond(phone) {
+      width: 90%;
+    }
   }
 
   &__cards {

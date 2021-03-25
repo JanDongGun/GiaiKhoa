@@ -6,6 +6,10 @@
   @include respond(tab-port) {
     justify-content: center;
   }
+
+  @include respond(phone) {
+    margin-bottom: 5rem;
+  }
 }
 
 .role {
