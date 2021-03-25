@@ -2,7 +2,9 @@
   padding-bottom: 12.5rem;
   background-color: white;
 
-  @include respond(phone) {
+  @include respond(tab-port) {
+    background-color: $color-gray-light;
+    padding-bottom: 0rem;
   }
   &__title {
     text-align: center;

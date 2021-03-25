@@ -256,7 +256,7 @@ a {
   text-transform: uppercase;
   line-height: 1.2;
 }
-@media (max-width: 37.5em) {
+@media (max-width: 56.25em) {
   .heading-secondary {
     font-size: 2.5rem;
     text-align: center;
@@ -482,6 +482,12 @@ a {
 .trusted {
   padding-bottom: 12.5rem;
   background-color: white;
+}
+@media (max-width: 56.25em) {
+  .trusted {
+    background-color: #f7fcfd;
+    padding-bottom: 0rem;
+  }
 }
 .trusted__title {
   text-align: center;
