@@ -64,7 +64,7 @@ window.addEventListener("DOMContentLoaded", function () {
   // count down
   document.getElementById("submit").addEventListener("click", function (e) {
     e.preventDefault();
-    alert("Đăng ký tham gia");
+    window.open('https://forms.gle/WW4syKyEnqSxtWi28');
   });
 
   // Set the date we're counting down to
